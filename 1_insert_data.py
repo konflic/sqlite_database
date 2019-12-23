@@ -38,7 +38,7 @@ users = [
 ]
 
 # Множественное добавление
-# sql = "INSERT INTO users (nickname, email, reg_date) VALUES (?, ?, ?)"
-# example_con.executemany(sql, users)
-# example_con.commit()
-# example_con.close()
+sql = "INSERT INTO users (nickname, email, reg_date) VALUES (?, ?, ?)"
+example_con.executemany(sql, users)
+example_con.commit()
+example_con.close()
